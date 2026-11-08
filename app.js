@@ -4,7 +4,8 @@
 
 /*---------------------------- Variables (state) ----------------------------*/
 let currentPlayer = 'X'
-
+let winner = false
+let tie = false
 
 
 /*------------------------ Cached Element References ------------------------*/
@@ -28,38 +29,135 @@ messageEL.textContent = `It's ${currentPlayer} turn`
 
 /*----------------------------- Event Listeners -----------------------------*/
 squareEl0.addEventListener('click', () => {
+  if (squareEl0.textContent !== '' || winner === true) {
+    return
+  } else {
   squareEl0.textContent = currentPlayer
-}
-)
+  if (currentPlayer === 'X') {
+    currentPlayer = 'O'
+  } else {
+    currentPlayer = 'X'
+  }
+  messageEL.textContent = `It's ${currentPlayer} turn`
+  }
+  if (squareEl0.textContent === squareEl1.textContent && squareEl1.textContent) {}
 squareEl1.addEventListener('click', () => {
+  if (squareEl1.textContent !== '' || winner === true) {
+    return
+  } else {
   squareEl1.textContent = currentPlayer
-}
+  if (currentPlayer === 'X') {
+    currentPlayer = 'O'
+  } else {
+    currentPlayer = 'X'
+  }
+  messageEL.textContent = `It's ${currentPlayer} turn`
+  }
+ }
 )
 squareEl2.addEventListener('click', () => {
-  messageEL.textContent = currentPlayer
-}
+  if (squareEl2.textContent !== '' || winner === true) {
+    return
+  } else {
+  squareEl2.textContent = currentPlayer
+  if (currentPlayer === 'X') {
+    currentPlayer = 'O'
+  } else {
+    currentPlayer = 'X'
+  }
+  messageEL.textContent = `It's ${currentPlayer} turn`
+  }
+ }
 )
+
 squareEl3.addEventListener('click', () => {
-  messageEL.textContent = currentPlayer
-}
+  if (squareEl3.textContent !== '' || winner === true) {
+    return
+  } else {
+  squareEl3.textContent = currentPlayer
+  if (currentPlayer === 'X') {
+    currentPlayer = 'O'
+  } else {
+    currentPlayer = 'X'
+  }
+  messageEL.textContent = `It's ${currentPlayer} turn`
+  }
+ }
 )
+
 squareEl4.addEventListener('click', () => {
-  messageEL.textContent = currentPlayer
-}
+  if (squareEl4.textContent !== '' || winner === true) {
+    return
+  } else {
+  squareEl4.textContent = currentPlayer
+  if (currentPlayer === 'X') {
+    currentPlayer = 'O'
+  } else {
+    currentPlayer = 'X'
+  }
+  messageEL.textContent = `It's ${currentPlayer} turn`
+  }
+ }
 )
+
 squareEl5.addEventListener('click', () => {
-  messageEL.textContent = currentPlayer
-}
+  if (squareEl5.textContent !== '' || winner === true) {
+    return
+  } else {
+  squareEl5.textContent = currentPlayer
+  if (currentPlayer === 'X') {
+    currentPlayer = 'O'
+  } else {
+    currentPlayer = 'X'
+  }
+  messageEL.textContent = `It's ${currentPlayer} turn`
+  }
+ }
 )
+
 squareEl6.addEventListener('click', () => {
-  messageEL.textContent = currentPlayer
-}
+  if (squareEl6.textContent !== '' || winner === true) {
+    return
+  } else {
+  squareEl6.textContent = currentPlayer
+  if (currentPlayer === 'X') {
+    currentPlayer = 'O'
+  } else {
+    currentPlayer = 'X'
+  }
+  messageEL.textContent = `It's ${currentPlayer} turn`
+  }
+ }
 )
+
 squareEl7.addEventListener('click', () => {
-  messageEL.textContent = currentPlayer
-}
+  if (squareEl7.textContent !== '' || winner === true) {
+    return
+  } else {
+  squareEl7.textContent = currentPlayer
+  if (currentPlayer === 'X') {
+    currentPlayer = 'O'
+  } else {
+    currentPlayer = 'X'
+  }
+  messageEL.textContent = `It's ${currentPlayer} turn`
+  }
+ }
 )
+
 squareEl8.addEventListener('click', () => {
-  messageEL.textContent = currentPlayer
-}
+  if (squareEl8.textContent !== '' || winner === true) {
+    return
+  } else {
+  squareEl8.textContent = currentPlayer
+  if (currentPlayer === 'X') {
+    currentPlayer = 'O'
+  } else {
+    currentPlayer = 'X'
+  }
+  messageEL.textContent = `It's ${currentPlayer} turn`
+  }
+ }
 )
+
+
